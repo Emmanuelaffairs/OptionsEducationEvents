@@ -7,7 +7,7 @@
   <title>Options Education Events</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
- <meta name="facebook-domain-verification" content="9bwxqvbx9nhptuib8hvhfm6e5jfopo" />
+  <meta name="facebook-domain-verification" content="9bwxqvbx9nhptuib8hvhfm6e5jfopo"   />
   <link href="files/img/logo.png" rel="icon" type="image/x-icon">
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -16,44 +16,46 @@
   <link href="files/functionalities/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="files/functionalities/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="files/css/style.css" rel="stylesheet">
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '815601776929866');
-fbq('track', 'PageView');>
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=815601776929866&ev=PageView&noscript=1"
-/></noscript>
-    <script>
-  function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-11317176789/tHPUCJvN19gYENXTuZQq',
-      'event_callback': callback
-  });
-  return false;
-}
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '815601776929866');
+    fbq('track', 'PageView');>
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=815601776929866&ev=PageView&noscript=1" /></noscript>
+  <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof (url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+          'send_to': 'AW-11317176789/tHPUCJvN19gYENXTuZQq',
+          'event_callback': callback
+        });
+        return false;
+      }
   </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11317176789">
-</script>
-<script>
-   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'AW-11317176789');
-</script
+    gtag('config', 'AW-11317176789');
+  </script
 </head>
 
 <body>
@@ -93,31 +95,107 @@ src="https://www.facebook.com/tr?id=815601776929866&ev=PageView&noscript=1"
   </header>
   <section id="hero" class="d-flex align-items-center">
     <div class="container">
-        <div class="content-lg" data-aos="zoom-in" data-aos-easing="linear"
+      <div class="row">
+        <div class="col-lg-7 col-md-12  pb-5">
+          <form action="files/forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="form-group col-md-6">
+                  <label for="first_name">First Name</label>
+                  <input type="text" name="firstname" class="form-control" placeholder="Enter your first name" required>
+              </div>
+              <div class="form-group col-md-6">
+                  <label for="last_name">Last Name</label>
+                  <input type="text" name="lastname" class="form-control" placeholder="Enter your last name" required>
+              </div>
+              <div class="form-group col-md-6">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+              </div>
+              <div class="form-group col-md-6">
+                  <label for="phone">Phone</label>
+                  <input type="tel" name="phone" class="form-control" placeholder="Enter your phone" required>
+              </div>
+              <div class="form-group col-md-6">
+                  <label for="study_destination">Preferred Study Destination</label>
+                  <select name="study_destination" class="form-control" required>
+                      <option value="">Please select study destination</option>
+                      <option value="Australia">Australia</option>
+                      <option value="Canada">Canada</option>
+                      <option value="Dubai">Dubai</option>
+                      <option value="Ireland">Ireland</option>
+                      <option value="UK">UK</option>
+                  </select>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="preferred_intake">Preferred Intake</label>
+                <select name="preferred_intake" class="form-control" required>
+                    <option value="">Please select preferred intake</option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="April">April</option>
+                    <option value="July">July</option>
+                    <option value="September">September</option>
+                    <option value="November">November</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="level_of_education">Highest level of education</label>
+                <input type="text" name="level_of_education" class="form-control"
+                placeholder="Enter your Highest Level Of Education" required>
+              </div>
+              <div class="form-group col-md-6">
+                  <label for="how_did_you_hear_about_us">How did you hear about us?</label>
+                  <select name="how_did_you_hear_about_us" class="form-control" required>
+                      <option value="">How did you hear about us?</option>
+                      <option value="Facebook">Facebook</option>
+                      <option value="Google">Google</option>
+                      <option value="Instagram">Instagram</option>\
+                      <option value="WhatsApp Tv">WhatsApp Tv</option>
+                      <option value="Youtube">Youtube</option>
+                      <option value="internet search">internet search</option>
+                      <option value="Snapchat">Snapchat</option>
+                      <option value="Radio Jingle">Radio Jingle</option>
+                      <option value="influencer">influencer</option>
+                      <option value="Referral from a friend">Referral from a friend</option>
+                      <option value="Others">Others</option>
+                  </select>
+              </div>
+              <div class="my-3 text-center mx-auto">
+                <div class="loading">Loading</div>
+                <div class="error-message text-center"></div>
+                <div class="sent-message">Looking forward to seeing you at the event. Thank you!</div>
+              </div>
+              <div class="form-group col-md-12 text-center">
+                <button type="submit" name="submit" class="btn btn-primary">BOOK A SEAT</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-5 d-sm-none d-lg-block">
+          <div class="content-lg" data-aos="zoom-in" data-aos-easing="linear"
         data-aos-duration="1500">
-          <h1>Options Education Agency</h1> <h2>Education Fair 2023</h2>
+          <h1>Options Education Agency</h1> <h2>International Education Fair 2023</h2>
           <h3><i class="bi bi-calendar"></i> 30th Sept, 2023</span></h2>
           <h3><i class="bi bi-clock"></i> 9AM - 4PM</h4>
           <h3><i class="bi bi-geo-alt"></i> Sheraton Hotel Lagos</h3>
             <h3><i class="bi bi-door-open"></i> Free Entry</h3>
-          <a href="#register" class="btn-get-started scrollto">Book A Seat</a>
         </div>
+        </div>
+      </div>
     </div>
   </section>
   <main id="main">
     <section id="why-us" class="why-us" data-aos="fade-up">
       <div class="container">
-  <div class="row">
+        <div class="row">
           <div class=" content-sm" data-aos="zoom-in-up" data-aos-easing="linear"
           data-aos-duration="1500">
-            <h1>Options Education Agency</h1> <h2>Education Fair 2023</h2>
+            <h1>Options Education Agency</h1> <h2>International Education Fair 2023</h2>
             <h3><i class="bi bi-calendar"></i> 30th Sept, 2023</span></h2>
             <h3><i class="bi bi-clock"></i> 9AM - 4PM</h3>
             <h3><i class="bi bi-geo-alt"></i> Sheraton Hotel Lagos</h3>
               <h3><i class="bi bi-door-open"></i> Free Entry</h3>
-            <a href="#register" class="btn-get-started scrollto">Book A Seat</a>
           </div>
-        <div class="row">
           <div class="col-lg-4 d-flex align-items-stretch">
             <div class="content">
               <h3>Are you interested in pursuing an education abroad?</h3>
@@ -188,7 +266,6 @@ src="https://www.facebook.com/tr?id=815601776929866&ev=PageView&noscript=1"
     </section>
     <section id="contact" class="contact">
       <div class="container">
-
         <div class="section-title">
           <h2>Locate Us</h2>
           <p class="pb-4" data-aos="fade-down">Secure your spot and receive <b>FREE ENTRY</b> to the event by signing up
@@ -244,16 +321,11 @@ src="https://www.facebook.com/tr?id=815601776929866&ev=PageView&noscript=1"
         </div>
       </div>
     </section>
-    <section id="register" class="register" data-aos="fade-right">
+   <section id="register" class="register" data-aos="fade-right">
       <div class="container">
         <div class="section-title">
-          <h2>Register</h2>
-          <p class="pb-2">
-            At <b>Options Education Agency</b>, we're committed to turning your study abroad dreams into a reality as we
-            have
-            done for many others.<br>
-            <b>Don't Miss Out – Register Now!</b>
-          </p>
+          <h2>Count Down</h2>
+        </div>
           <div class="row">
             <div class="countdown col-sm-12">
               <div class="box">
@@ -275,84 +347,11 @@ src="https://www.facebook.com/tr?id=815601776929866&ev=PageView&noscript=1"
             </div>
           </div>
         </div>
-        <div class="book-a-seat pb-5">
-          <form action="files/forms/contact.php" method="post" role="form" class="php-email-form">
-        <div class="row">
-            <div class="form-group col-md-6">
-                <label for="first_name">First Name</label>
-                <input type="text" name="firstname" class="form-control" placeholder="Enter your First name" required>
-            </div>
-            <div class="form-group col-md-6">
-                <label for="last_name">Last Name</label>
-                <input type="text" name="lastname" class="form-control" placeholder="Enter your Last name" required>
-            </div>
-            <div class="form-group col-md-6">
-                <label for="email">Email</label>
-                <input type="email" name="email" class="form-control" placeholder="Enter your Email" required>
-            </div>
-            <div class="form-group col-md-6">
-                <label for="phone">Phone</label>
-                <input type="tel" name="phone" class="form-control" placeholder="Enter your Phone" required>
-            </div>
-            <div class="form-group col-md-6">
-                <label for="study_destination">Preferred Study Destination</label>
-                <select name="study_destination" class="form-control" required>
-                    <option value="">Please Select</option>
-                    <option value="Australia">Australia</option>
-                    <option value="Canada">Canada</option>
-                    <option value="Dubai">Dubai</option>
-                    <option value="Ireland">Ireland</option>
-                    <option value="UK">UK</option>
-                </select>
-            </div>
-            <div class="form-group col-md-6">
-                <label for="preferred_intake">Preferred Intake</label>
-                <select name="preferred_intake" class="form-control" required>
-                    <option value="">Please Select</option>
-                    <option value="January">January</option>
-                    <option value="February">February</option>
-                    <option value="April">April</option>
-                    <option value="July">July</option>
-                    <option value="September">September</option>
-                    <option value="November">November</option>
-                </select>
-            </div>
-            <div class="form-group col-md-6">
-                <label for="level_of_education">Highest Level Of Education</label>
-                <input type="text" name="level_of_education" class="form-control"
-                    placeholder="Enter your Highest Level Of Education" required>
-            </div>
-            <div class="form-group col-md-6">
-                <label for="how_did_you_hear_about_us">How did you hear about us?</label>
-                <select name="how_did_you_hear_about_us" class="form-control" required>
-                    <option value="">Please Select</option>
-                    <option value="Facebook">Facebook</option>
-                    <option value="Google">Google</option>
-                    <option value="Instagram">Instagram</option>\
-                    <option value="WhatsApp Tv">WhatsApp Tv</option>
-                    <option value="Youtube">Youtube</option>
-                    <option value="internet search">internet search</option>
-                    <option value="Snapchat">Snapchat</option>
-                    <option value="Radio Jingle">Radio Jingle</option>
-                    <option value="influencer">influencer</option>
-                    <option value="Referral from a friend">Referral from a friend</option>
-                    <option value="Others">Others</option>
-                </select>
-            </div>
-            <div class="my-3 text-center mx-auto">
-                <div class="loading">Loading</div>
-                <div class="error-message text-center"></div>
-                <div class="sent-message">Looking forward to seeing you at the event. Thank you!</div>
-            </div>
-            <div class="form-group col-md-12 text-center">
-                <button type="submit" name="submit" class="btn btn-primary">Book A Seat</button>
-            </div>
-        </div>
-
-    </form>
+        <div class="text-center">
+          <a href="#hero" class="btn-get-started scrollto text-white">BOOK A SEAT</a>
         </div>
       </div>
-    </section>
+    </section> 
     <section id="partners" class="partners" data-aos="fade-up" data-aos-duration="200">
       <div class="container">
         <div class="section-title">
@@ -502,6 +501,8 @@ src="https://www.facebook.com/tr?id=815601776929866&ev=PageView&noscript=1"
           </div>
 
         </div>
+        </div>
+
     </section>
   </main>
   <footer id="footer">
@@ -527,6 +528,6 @@ src="https://www.facebook.com/tr?id=815601776929866&ev=PageView&noscript=1"
   <script src="files/js/main.js"></script>
   <script src="files/forms/validate.js"></script>
 
-</body>
+  </body>
 
 </html>
