@@ -530,7 +530,20 @@
   <!-- Template Main JS File -->
   <script src="files/js/main.js"></script>
   <script src="files/forms/validate.js"></script>
-
+<script>
+  document.addEventListener('click', function(e) {
+    if (e.target.innerText == "BOOK A SEAT") {
+      var timer = setInterval(function() {
+        if (document.querySelector('.sent-message.d-block')) {
+          gtag('event', 'conversion', {
+            'send_to': 'AW-11317176789/tHPUCJvN19gYENXTuZQq'
+          });
+          clearInterval(timer);
+        }
+      }, 1000);
+    }
+  })
+</script>
   </body>
 
 </html>
